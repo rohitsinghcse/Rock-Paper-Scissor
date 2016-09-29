@@ -14,8 +14,6 @@ var userChoice = prompt("Do you choose rock, paper or scissors?");
 		} else {
 			computerChoice = "scissors";
 		} //console.log("Computer: " + computerChoice);
-		var result = document.getElementById('result');	
-		result.innerHTML = "Computer chose: " + computerChoice + "<BR>";
 		var compare=function(choice1,choice2)
 		{
 			if(choice1===choice2)
@@ -58,5 +56,6 @@ var userChoice = prompt("Do you choose rock, paper or scissors?");
 			}
 		}
 		var finalResult =compare(userChoice,computerChoice);
-		result.innerHTML = "Result " + finalResult ;
+		var result = document.getElementById('result');	
+		result.innerHTML = "Computer chose: " + computerChoice + "<BR>  Result " + finalResult ;
 	}	
